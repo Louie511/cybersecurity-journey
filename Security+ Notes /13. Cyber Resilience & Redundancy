@@ -4,146 +4,155 @@
 ---
 
 ## High Availability
-- **Goal:** Keep services continuously available with minimal downtime.
-- **Methods:** Load balancing, clustering, redundancy, multi-cloud strategies.
+- Goal: Keep services continuously available with minimal downtime.  
+- Methods: Load balancing, clustering, redundancy, multi-cloud strategies.  
 
 ### Uptime & Availability
-- **Uptime:** Percentage of time a system is online.
-- **Five Nines (99.999%):** ~5 minutes downtime/year.
-- **Six Nines (99.9999%):** ~31 seconds downtime/year.
+- **Uptime:** Percentage of time a system is online.  
+- **Five Nines (99.999%):** ~5 minutes downtime per year.  
+- **Six Nines (99.9999%):** ~31 seconds downtime per year.  
 
 ### Load Balancing
-- Distributes workloads across multiple resources.
-- Optimizes resource usage, throughput, and response time.
-- Prevents overload of a single resource.
+- Distributes workloads across multiple servers.  
+- Optimizes resource usage, throughput, and response time.  
+- Prevents overload of any single system.  
 
 ### Clustering
-- Uses multiple computers, storage devices, and network connections as one system.
-- Increases availability, reliability, and scalability.
-- Ensures continuity during hardware failures.
-- Can be combined with load balancing.
+- Multiple servers/storage/network act as a single system.  
+- Provides high availability, reliability, and scalability.  
+- Continues service during hardware failures.  
 
 ### Redundancy
-- Duplicate critical components to prevent single points of failure.
-- Examples: Power supplies, network connections, servers, software services, service providers.
+- Duplicate critical components to eliminate single points of failure.  
+- Examples: Power supplies, network links, servers, software services, service providers.  
 
 ### Multi-Cloud Approach
-- Spread data/apps across multiple cloud providers.
-- Reduces risk of provider-specific failure and vendor lock-in.
-- Requires unified data/threat management and policy enforcement.
+- Spreads data/apps across different cloud providers.  
+- Reduces risk of provider-specific failures and vendor lock-in.  
+- Requires unified data/threat management and consistent policy enforcement.  
 
 ---
 
-## Data Redundancy (RAID Overview)
-- **RAID (Redundant Array of Independent Disks):** Combines multiple disks into one logical storage unit.
+## Data Redundancy (RAID)
+**RAID (Redundant Array of Independent Disks):** Combines multiple drives into one logical storage unit.  
 
 ### RAID Levels
-- **RAID 0:** Striping, high performance, no redundancy.
-- **RAID 1:** Mirroring, full redundancy, survives 1 disk failure.
-- **RAID 5:** Striping + parity, tolerates 1 disk failure, slower rebuild.
-- **RAID 6:** Like RAID 5 with double parity, tolerates 2 disk failures.
-- **RAID 10:** RAID 1 + RAID 0, high performance + redundancy, requires 4+ disks.
+- **RAID 0 (Striping):** High performance, no redundancy.  
+- **RAID 1 (Mirroring):** Full redundancy, survives 1 drive failure.  
+- **RAID 5 (Striping + Parity):** Fault tolerance, 1 drive can fail, slower rebuilds.  
+- **RAID 6 (Double Parity):** Fault tolerance, 2 drives can fail.  
+- **RAID 10 (Mirroring + Striping):** High performance + redundancy, requires 4+ drives.  
 
-### RAID Resilience Categories
-- **Failure-resistant:** Handles hardware malfunctions (e.g., RAID 1).
-- **Fault-tolerant:** Allows continued operation + quick rebuilds (e.g., RAID 5/6/10).
-- **Disaster-tolerant:** Survives major events with separate zones (e.g., RAID 1/10).
+### RAID Resilience
+- **Failure-resistant:** Resists hardware issues (RAID 1).  
+- **Fault-tolerant:** Continues operations + quick rebuilds (RAID 5/6/10).  
+- **Disaster-tolerant:** Protects against major events via separate zones (RAID 1/10).  
 
 ---
 
 ## Capacity Planning
-- Ensures future demand can be met cost-effectively.
+- Ensures organizations meet future demand cost-effectively.  
 
-### Four Main Aspects
-1. **People:** Skill assessment, hiring, training (e.g., seasonal employees).
-2. **Technology:** Evaluate/scaling of tech resources (e.g., e-commerce spikes).
-3. **Infrastructure:** Space/power planning (e.g., data centers).
-4. **Processes:** Workflow optimization, automation, outsourcing.
+### Key Areas
+- **People:** Skills, hiring, training, scaling workforce.  
+- **Technology:** Assess/scaling resources, future investment.  
+- **Infrastructure:** Space, utilities, data center capacity.  
+- **Processes:** Workflow optimization, automation, outsourcing.  
 
 ---
 
 ## Powering Data Centers
 ### Power Events
-- **Surges:** Small voltage increases.
-- **Spikes:** Short, sharp increases.
-- **Sags:** Brief decreases.
-- **Brownouts:** Prolonged undervoltage.
-- **Blackouts:** Complete power loss.
+- **Surges:** Small voltage increases.  
+- **Spikes:** Short, sharp increases (e.g., lightning).  
+- **Sags:** Brief decreases in voltage.  
+- **Brownouts:** Prolonged undervoltage.  
+- **Blackouts:** Complete loss of power.  
 
 ### Protection Components
-- **Line Conditioners:** Stabilize/filter voltage.
-- **UPS (Uninterruptible Power Supply):** Battery backup, line conditioning, 15–60 mins runtime.
-- **Generators:** Long-term power during outages (portable/permanent/battery-inverter).
-- **PDC (Power Distribution Centers):** Centralized power distribution, circuit protection, load balancing.
+- **Line Conditioners:** Stabilize/filter voltage.  
+- **UPS (Uninterruptible Power Supply):** Battery backup (15–60 mins), line conditioning.  
+- **Generators:** Long-term power, portable or permanent.  
+- **PDC (Power Distribution Center):** Centralized distribution, circuit protection, load balancing.  
 
 ---
 
 ## Data Backups
-- **Goal:** Protect data against loss, corruption, unavailability.
-- **Onsite vs Offsite:** Onsite = convenient but disaster-prone; Offsite = disaster protection.
+- Protect against data loss, corruption, or unavailability.  
+
+### Onsite vs Offsite
+- **Onsite:** Convenient, but vulnerable to disasters.  
+- **Offsite:** Safer for disaster recovery.  
 
 ### Backup Frequency
-- Based on **RPO (Recovery Point Objective):** Defines acceptable data loss window.
+- Defined by **RPO (Recovery Point Objective):** How much data loss is acceptable.  
 
 ### Encryption
-- Protects backup data from unauthorized access.
-- **At rest:** Data encrypted in storage.
-- **In transit:** Data encrypted during transfer.
+- **At Rest:** Protects stored data.  
+- **In Transit:** Protects data during transfer.  
 
 ### Snapshots
-- Point-in-time copies.
-- Stores only changes since last snapshot → storage efficient.
+- Point-in-time copies.  
+- Records only changes since last snapshot → storage efficient.  
 
 ### Recovery
-- Steps: Select backup → initiate recovery → validate data → test/verify → document.
-- **Replication:** Real-time/near-real-time copies for continuity.
-- **Journaling:** Record changes for granular recovery + compliance.
+- Steps: Select backup → recover → validate → test → document.  
+- **Replication:** Real-time/near-real-time copying.  
+- **Journaling:** Tracks changes for granular recovery + compliance.  
 
 ---
 
 ## Continuity of Operations Plan (COOP)
-- Ensures recovery from disruptions/disasters.
+- Ensures recovery from disruptive events/disasters.  
 
-### Key Terms
-- **BCP (Business Continuity Plan):** Preventative + recovery measures for disruptions.
-- **DRP (Disaster Recovery Plan):** Subset of BCP, focused on fast recovery from disasters.
+### Plans
+- **Business Continuity Plan (BCP):** Broad preventative + recovery measures.  
+- **Disaster Recovery Plan (DRP):** Subset of BCP, focused on rapid disaster recovery.  
 
 ### Strategies
-- Alternative locations for infrastructure.
-- Staff distribution across regions.
-- Cloud services for resilience.
+- Alternative locations for infrastructure.  
+- Distribute staff across regions.  
+- Use cloud services to maintain operations.  
 
 ### Roles
-- **Senior Management:** Sets goals, approves scope, appoints coordinators.
-- **Business Continuity Committee:** Cross-department reps, set recovery priorities.
+- **Senior Management:** Defines scope, goals, risk appetite.  
+- **Business Continuity Committee:** Cross-department team, sets priorities.  
 
 ---
 
-## Redundant Site Considerations
-- **Hot Sites:** Fully ready, instant switchover (expensive).
-- **Warm Sites:** Partially ready, operational in days.
-- **Cold Sites:** Minimal setup, operational in weeks/months (cheap).
-- **Mobile Sites:** Portable hot/warm/cold (e.g., military units).
+## Redundant Sites
+### Types
+- **Hot Site:** Fully operational, instant switchover (expensive).  
+- **Warm Site:** Partial setup, operational in days.  
+- **Cold Site:** Minimal setup, operational in weeks/months (cheap).  
+- **Mobile Site:** Portable hot/warm/cold options (e.g., military).  
 
 ### Virtual Sites
-- Cloud-based redundancy.
-- **Virtual Hot/Warm/Cold Sites** scale resources as needed.
-- Cost-effective, scalable, easy to maintain.
+- Cloud-based redundancy.  
+- **Virtual Hot Site:** Fully replicated, instant access.  
+- **Virtual Warm Site:** Scales resources when needed.  
+- **Virtual Cold Site:** Minimal ongoing costs, activated only in disasters.  
 
 ### Geographic Dispersion
-- Spread resources across multiple regions.
-- Increases disaster recovery and redundancy.
+- Spreads resources across locations.  
+- Reduces risk of localized outages.  
+- Improves disaster recovery.  
 
 ---
 
 ## Testing Resilience & Recovery
-- **Resilience Testing:** Tabletop exercises, failover tests, simulations, parallel processing.
-- **Recovery Testing:** Executes actual recovery procedures to ensure effectiveness.
+### Resilience Testing
+- Ensures systems can withstand and adapt to disruptions.  
+- Methods: Tabletop exercises, failover tests, simulations, parallel processing.  
+
+### Recovery Testing
+- Validates the ability to restore operations after disruptions.  
+- Involves executing planned recovery procedures.  
 
 ### Test Types
-- **Tabletop Exercises:** Discussion-based, identifies plan weaknesses.
-- **Failover Tests:** Switch to backups, validate process.
-- **Simulations:** Virtual scenario, hands-on staff evaluation.
-- **Parallel Processing:** Run main + backup simultaneously, test multi-failure resilience.
+- **Tabletop Exercises:** Scenario discussions, identify gaps, low-cost.  
+- **Failover Tests:** Switch to backups, validate disaster recovery.  
+- **Simulations:** Virtual real-world scenarios, test staff performance.  
+- **Parallel Processing:** Run primary + backup together, test multi-failure resilience.  
 
 ---
