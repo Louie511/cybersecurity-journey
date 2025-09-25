@@ -1,11 +1,11 @@
 # Cyber Resilience and Redundancy
-**Objective 3.4: Explain the importance of resilience and recovery in security architecture**
+##Objective 3.4: Explain the importance of resilience and recovery in security architecture**
 
 ---
 
 ## High Availability
-- Goal: Keep services continuously available with minimal downtime.  
-- Methods: Load balancing, clustering, redundancy, multi-cloud strategies.  
+  - Goal: Keep services continuously available with minimal downtime.  
+  - Methods: Load balancing, clustering, redundancy, multi-cloud strategies.  
 
 ### Uptime & Availability
 - **Uptime:** Percentage of time a system is online.  
