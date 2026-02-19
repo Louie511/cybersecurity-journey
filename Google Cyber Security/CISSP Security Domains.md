@@ -22,7 +22,7 @@ This involves analyzing user behavior and creating network policies to mitigate 
 
 ### Identity and Access Management (IAM)
 
--IAM focuses on securing data by ensuring users adhere to established policies for controlling and managing both physical assets (like office spaces) and logical assets (like networks and applications).
+- IAM focuses on securing data by ensuring users adhere to established policies for controlling and managing both physical assets (like office spaces) and logical assets (like networks and applications).
 Key activities include validating employee identities and documenting access roles to maintain an organization's physical and digital security.
 
 ### Security Assessment and Testing
