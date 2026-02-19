@@ -10,7 +10,8 @@ Physical and Advanced Attacks
 ### Physical attacks: 
 - These incidents affect both digital and physical environments, such as malicious USB cables or flash drives, and card cloning. They are categorized under the asset security domain.
 
-### Adversarial artificial intelligence: This technique manipulates AI and machine learning to conduct more efficient attacks, falling under both communication and network security and identity and access management domains.
+### Adversarial artificial intelligence: 
+- This technique manipulates AI and machine learning to conduct more efficient attacks, falling under both communication and network security and identity and access management domains.
 
 ### Supply-Chain and Cryptographic Attacks
 
