@@ -1,9 +1,9 @@
-Security and Risk Management
+##Security and Risk Management
 
-Focuses on defining security goals, managing risks, ensuring compliance, and maintaining business continuity.
+- Focuses on defining security goals, managing risks, ensuring compliance, and maintaining business continuity.
 An example is updating company policies to comply with federal regulations like HIPAA.
 
-Asset Security
+##Asset Security
 
 Deals with protecting both digital and physical assets of an organization.
 This includes proper disposal and destruction of old equipment containing confidential information.
