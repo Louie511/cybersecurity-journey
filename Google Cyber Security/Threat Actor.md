@@ -11,3 +11,15 @@ Advanced persistent threats (APTs) have significant expertise accessing an organ
 - Damaging critical infrastructure, such as the power grid and natural resources
 
 - Gaining access to intellectual property, such as trade secrets or patents
+
+### Insider threats
+
+Insider threats abuse their authorized access to obtain data that may harm an organization. Their intentions and motivations can include: 
+
+- Sabotage
+
+- Corruption
+
+- Espionage
+
+- Unauthorized data access or leaks 
