@@ -1,5 +1,7 @@
 ## This lecture focuses on security ethics, particularly regarding counterattacks and the ethical obligations of cybersecurity professionals.
 
+
+
 ## Ethical Concerns and Laws Related to Counterattacks
 
 - In the U.S., counterattacking a threat actor is illegal due to laws like the Computer Fraud and Abuse Act of 1986, as it's seen as vigilantism and can escalate attacks.
