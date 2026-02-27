@@ -1,0 +1,16 @@
+## This lecture explores how organizations manage risk and the common tactics used by threat actors to help you prepare for a career in cybersecurity.
+
+## Risk Management Strategies
+
+- Organizations protect valuable assets, which can be digital (like personal information) or physical (like servers).
+- Common strategies for managing risks include acceptance, avoidance, transference, and mitigation.
+
+## Threats, Risks, and Vulnerabilities
+
+- Threats are events that can negatively impact assets, such as insider threats or advanced persistent threats.
+- Risks are anything that can affect the confidentiality, integrity, or availability of an asset, including external, internal, legacy system, multiparty, and software compliance risks.
+
+## Understanding Vulnerabilities
+
+- Vulnerabilities are weaknesses that can be exploited by threats, such as ProxyLogon, ZeroLogon, Log4Shell, and PetitPotam.
+- As a security analyst, you might work in vulnerability management, which involves monitoring systems to identify and mitigate these weaknesses through patching and updates.
